@@ -1,7 +1,13 @@
+import Chute from "./components/Chute";
+import Jogo from "./components/Jogo";
+import Letras from "./components/Letras";
+
 export default function App() {
   return (
-    <div>
-      <h1>Jogo da Forca</h1>
+    <div className="container-tela">
+      <Jogo />
+      <Letras />
+      <Chute />
     </div>
   )
 }

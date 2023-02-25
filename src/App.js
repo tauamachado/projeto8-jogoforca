@@ -17,5 +17,5 @@ export default function App() {
   )
 }
 
-// teste
+// teste para atualizar a mensagem do commit
 

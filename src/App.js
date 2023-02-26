@@ -54,7 +54,11 @@ export default function App() {
   }
 
   function errouLetra(letraClicada) {
-    console.log("Errou")
+    const novoErro = erros + 1
+    setErros(novoErro)
+
+    //perdeu
+
   }
 
   return (

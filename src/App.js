@@ -6,16 +6,22 @@ import alfabeto from "./alfabeto";
 
 export default function App() {
   const [desabilitarInput, setDesabilitarInput] = useState(true) 
-  const [letrasUsadas, setLetrasUsadas] = useState(alfabeto) // letras usadas pelo usuário;
+  const [letrasUsadas, setLetrasUsadas] = useState(alfabeto) // letras desabiitadas;
+  const [erros, setErros] = useState(0)
+
+  function iniciarJogo() {
+    setDesabilitarInput(false)
+    setLetrasUsadas([])
+  }
 
   return (
     <div className="container-tela">
-      <Jogo />
+      <Jogo iniciarJogo={iniciarJogo} erros={erros}/>
       <Letras letrasUsadas={letrasUsadas}/>
       <Chute desabilitarInput={desabilitarInput}/>
     </div>
   )
 }
 
-// teste para atualizar a mensagem do commit
+// teste para atualizar a mensagem do commit 
 

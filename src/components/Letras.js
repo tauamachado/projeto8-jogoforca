@@ -6,7 +6,7 @@ export default function Letras(props) {
     return (
         <div className="container-letras">
             {alfabeto.map(letra => (
-                <button
+                <button data-test="letter"
                     key={letra}
                     disabled={letrasUsadas.includes(letra)}
                     onClick={() => clicarLetra(letra)}

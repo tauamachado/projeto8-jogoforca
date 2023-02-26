@@ -13,9 +13,9 @@ export default function Jogo(props) {
 
     return (
         <div className="container-forca">
-            <img src={imagens[erros]} alt="forca" />
-            <button onClick={iniciarJogo}>Escolher Palavra</button>
-            <h1 className={corPalavra}>{palavraJogo}</h1>
+            <img data-test="game-image" src={imagens[erros]} alt="forca" />
+            <button data-test="choose-word" onClick={iniciarJogo}>Escolher Palavra</button>
+            <h1 data-test="word" className={corPalavra}>{palavraJogo}</h1>
         </div>
     )
 }

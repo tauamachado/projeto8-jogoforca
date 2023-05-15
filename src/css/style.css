@@ -1,21 +1,30 @@
+:root {
+  --main-font: 'Roboto', sans-serif;
+  --main-green: #27AE60;
+  --main-blue: #7AA7C7;
+  --main-gray: #9FAAB5;
+  --main-light-gray: #E1ECF4;
+  --main-red: #FF0000;
+}
+
 body {
-  font-family: 'Roboto';
+  font-family: var(--main-font);
   display: flex;
   justify-content: center;
 }
+
 .container {
-  width: 1200px;
-display: flex;
-justify-content: space-between;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .container img {
   width: 400px;
-  margin-top: 59px;
-  margin-bottom: 70px;
+  margin: 59px 0 70px;
 }
 
-.container button{
+.container button {
   width: 200px;
   height: 60px;
   margin-right: 53px;
@@ -26,7 +35,7 @@ justify-content: space-between;
   font-size: 20px;
   line-height: 23px;
   color: white;
-  background-color: #27AE60;
+  background-color: var(--main-green);
 }
 
 .alfabeto {
@@ -40,15 +49,25 @@ justify-content: space-between;
 
 .alfabeto button {
   width: 40px;
-height: 40px;
-margin-right: 12px;
-margin-bottom: 11px;
-border: 1px solid #7AA7C7;
-border-radius: 3px;
-font-weight: 700;
-font-size: 16px;
-line-height: 19px;
-color:#798A9F;
+  height: 40px;
+  margin-right: 12px;
+  margin-bottom: 11px;
+  border: 1px solid var(--main-blue);
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--main-gray);
+  background-color: var(--main-light-gray);
+}
+
+.alfabeto button.desabilitado {
+  background-color: var(--main-gray);
+  cursor: default;
+}
+
+.alfabeto button.habilitado {
+  cursor: pointer;
 }
 
 .container-right {
@@ -59,28 +78,20 @@ color:#798A9F;
 }
 
 .editar-underline {
-font-family: 'Noto Sans';
-font-weight: 700;
-font-size: 40px;
-color: black;
-display: inline-block;
-margin: 0 5px;
-width: 15px;
-text-Align:center
+  font-family: 'Noto Sans';
+  font-weight: 700;
+  font-size: 40px;
+  color: black;
+  display: inline-block;
+  margin: 0 5px;
+  width: 15px;
+  text-align: center;
 }
 
 .acertou {
-  color: #27AE60;
+  color: var(--main-green);
 }
 
 .errou {
-color: #FF0000;
-}
-
-.desabilitado { 
-  background: #9FAAB5 !important;
-}
-
-.habilitado {
-  background: #E1ECF4 !important;
+  color: var(--main-red);
 }

@@ -95,3 +95,11 @@ body {
 .errou {
   color: var(--main-red);
 }
+
+.desabilitado { 
+  background: #9FAAB5 !important;
+}
+
+.habilitado {
+  background: #E1ECF4 !important;
+}

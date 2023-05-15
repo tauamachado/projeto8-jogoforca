@@ -1,14 +1,17 @@
-import "./css/reset.css"
-import "./css/style.css"
-import Jogo from "./components/Jogo"
-import Letras from "./components/Letras"
+// Importações necessárias
+import "./css/reset.css";
+import "./css/style.css";
+import Jogo from "../src/components/Jogo";
 
-export default function App() {
+// Função principal do aplicativo
+function App() {
+  // Renderiza o componente Jogo
   return (
     <div className="App">
       <Jogo />
-      <Letras />
     </div>
   );
 }
 
+// Exporta a função principal do aplicativo
+export default App;

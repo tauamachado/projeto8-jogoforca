@@ -1,65 +1,86 @@
-:root {
-    --main-font: 'Roboto';
-    --main-color: #798A9F;
-    --main-bg: #27AE60;
-    --accent-color: #7AA7C7;
-  }
-  
-  body {
-    font-family: var(--main-font);
-    display: flex;
-    justify-content: center;
-  }
-  
-  .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 59px auto 70px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .container img {
-    width: 400px;
-  }
-  
-  .container button {
-    width: 200px;
-    height: 60px;
-    margin-right: 53px;
-    border-radius: 8px;
-    border: none;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
-    color: white;
-    background-color: var(--main-bg);
-  }
-  
-  .alfabeto {
-    width: 100%;
-    max-width: 700px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  .alfabeto button {
-    width: 40px;
-    height: 40px;
-    margin-right: 12px;
-    margin-bottom: 11px;
-    border: 1px solid var(--accent-color);
-    border-radius: 3px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    color: var(--main-color);
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
+body {
+  font-family: 'Roboto';
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 1200px;
+display: flex;
+justify-content: space-between;
+}
+
+.container img {
+  width: 400px;
+  margin-top: 59px;
+  margin-bottom: 70px;
+}
+
+.container button{
+  width: 200px;
+  height: 60px;
+  margin-right: 53px;
+  margin-top: 89px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: white;
+  background-color: #27AE60;
+}
+
+.alfabeto {
+  width: 700px;
+  display: flex;
+  margin-left: 250px;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.alfabeto button {
+  width: 40px;
+height: 40px;
+margin-right: 12px;
+margin-bottom: 11px;
+border: 1px solid #7AA7C7;
+border-radius: 3px;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+color:#798A9F;
+}
+
+.container-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+
+.editar-underline {
+font-family: 'Noto Sans';
+font-weight: 700;
+font-size: 40px;
+color: black;
+display: inline-block;
+margin: 0 5px;
+width: 15px;
+text-Align:center
+}
+
+.acertou {
+  color: #27AE60;
+}
+
+.errou {
+color: #FF0000;
+}
+
+.desabilitado { 
+  background: #9FAAB5 !important;
+}
+
+.habilitado {
+  background: #E1ECF4 !important;
+}

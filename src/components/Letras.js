@@ -4,6 +4,7 @@ export default function Letras() {
     return (
         <div className="alfabeto">
             {alfabeto.map((a) => <button>{a}</button>)}
+            {/* O tal do disabled deve entrar por aqui de alguma forma! */}
         </div>
     )
 }
